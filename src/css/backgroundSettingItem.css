@@ -1,0 +1,14 @@
+.settings-item {
+    margin: 24px;
+}
+
+.settings-item hr{
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 24px 0;
+    border: 0px;
+}
+.settings-item:last-of-type hr {
+    display: none;
+}
+

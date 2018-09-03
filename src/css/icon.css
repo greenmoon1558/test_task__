@@ -1,0 +1,18 @@
+.icon{
+    display: inline-block;
+    background-color: #fff;
+    background-size: 16px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    height: 16px;
+    margin-right: 8px;
+    width: 16px;
+    background-position: 0% 100%;
+    background-repeat:  no-repeat;
+}
+.upload-icon{
+    background-image: url("../../public/images/upload.svg"); 
+}
+.gallery-icon{
+    background-image: url("../../public/images/paint.svg"); 
+}

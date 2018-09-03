@@ -1,0 +1,78 @@
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    src: url("../../public/font/SF-UI-Text-Regular.otf");
+  }
+  
+  .filtersinputs__container>ul {
+    list-style-type: none;
+    margin: 16px 0 0 0;
+    padding: 0;
+  }
+  .filtersinputs__container li {
+    font-family:  "SF Text", -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: capitalize;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #212736;
+  }
+  .filtersinputs__container li p{
+    margin: 4px auto 8px;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .filtersinputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+  }
+  .filtersinputs input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+  }
+  .filtersradio-label{
+    width: 68px;
+    height: 68px;
+    border-radius: 4px 4px 6px 6px;
+    background-color: #ffffffff;
+    border: 1px solid #fff;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 125% 100%;
+    background-position: 33% 25%;
+  }
+  
+  div.filterradio__wrapper>div{
+    display: inline-block;
+    margin: 0 4px 0 0;
+    width: 68px;
+    border-radius: 6px;
+    height: 68px;
+    padding: 2px 2px 0px;
+    border: 2px solid #fff;
+  }
+  .filtersinputs input[type="radio"]:checked + div,
+  .filtersinputs input[type="radio"]:focus + div {
+    border: 2px solid #165bfb;
+  }
+  div.filterradio__wrapper .filtersinputs input[type="radio"]:checked + div>.filtersradio-label,
+  div.filterradio__wrapper .filtersinputs input[type="radio"]:focus + div>.filtersradio-label {
+    border: 1px solid #fff;
+  }
+  .filterradio__wrapper>div>div .filtersradio-label{
+    margin:-2px -2px -5px;
+    padding:2px 2px 0px;
+    width: 110%;
+  }
+
+  .filterradio__wrapper>div>div{
+      overflow: hidden;
+      border-radius: 3px;
+  }

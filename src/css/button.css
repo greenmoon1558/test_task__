@@ -1,0 +1,75 @@
+
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    src: url("../../public/font/SF-UI-Text-Regular.otf");
+  }
+
+button{
+  width: 104px;
+  box-sizing: border-box;
+  height: 36px;
+  
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #c5cbd6;
+  padding: 7px 15px;
+  margin: 0;
+}
+.image__container button{
+    display: flex;
+}
+
+.image__container button:not(:last-child){
+    margin-right: 16px;
+}
+.image__container button>i{
+    margin-right: 8px;
+}
+button:not(:last-child){
+    margin: 16px;
+}
+
+button>span{
+    margin: auto 6px auto 8px;
+    font-family:  "SF Text", -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #212736;
+    margin: 0;
+}
+
+.buttons__container>button:hover, 
+.buttons__container>button:focus, 
+.buttons__container>button:active{
+    background-color: #c5cbd6;
+}
+.buttons__container {
+    display:  flex;
+    align-items:  center;
+    margin: 16px auto;
+    justify-content: center;
+}
+.buttons__container>button{
+    margin: 0;   
+    border-radius: 0;
+    min-width: 108px;
+}
+.buttons__container button:not(:last-child){
+    border-right: 0px solid;
+}
+.buttons__container button:last-child{    
+  border-radius: 0 4px 4px 0;
+}
+.buttons__container button:first-child{
+    border-radius: 4px 0 0 4px;
+}
+.App>button{
+    display: block;
+    width: auto;
+    margin:10px auto;
+}

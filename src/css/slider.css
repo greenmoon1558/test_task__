@@ -1,0 +1,56 @@
+
+  input#filter__strength{
+    -webkit-appearance: none;
+      width: 278px;
+      height: 4px;
+      border-radius: 6px;
+      background-color:#f2f4f7;
+      outline: none;
+      padding: 0;
+      margin: 0 0 24px -2px;
+  }
+  #filter__strength::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px 0 rgba(33, 39, 54, 0.1), 0 2px 3px 0 rgba(22, 91, 251, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+  }
+  input#filter__strength::-webkit-slider-thumb:hover {
+    background: #165bfb;
+  }
+  input#filter__strength:active::-webkit-slider-thumb {
+    background: #165bfb;
+  }
+  input#filter__strength::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px 0 rgba(33, 39, 54, 0.1), 0 2px 3px 0 rgba(22, 91, 251, 0.1);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+  }
+  input#filter__strength::-moz-range-thumb:hover,
+  input#filter__strength:active::-moz-range-thumb,
+  input#filter__strength:focus::-webkit-slider-thumb {
+    background: #165bfb;
+  }
+
+  label[for="filter__strength"]{
+    font-family:  "SF Text", -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    margin-left:13px;
+    margin-bottom: 24px;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #212736;
+  }

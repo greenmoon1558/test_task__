@@ -1,0 +1,111 @@
+
+.switch{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .switch__label{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .switch__toggle{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .switch__label:before, .switch__label:after{
+    content: "";
+    cursor: pointer;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .switch__label:before{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #dfe2e8;
+  }
+  
+  .switch__label:after{
+    top: 50%;
+    z-index: 3;
+  }
+  
+  
+  .switch_type{
+    
+    width: 28px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #165bfb;
+  }
+  
+  .switch_type .switch__label{
+    border-radius:6px;   
+  }
+  
+  .switch_type .switch__label:before{
+    border-radius: 6px;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: transform .2s ease-out .25s, opacity .2s ease-out .25s;
+  }
+  
+  .switch_type .switch__toggle:checked ~ .switch__label:before{
+    transform: scale(0);
+    opacity: .7;
+    box-shadow: 0 1px 2px 0 rgba(33, 39, 54, 0.1), 0 2px 3px 0 rgba(33, 39, 54, 0.1);
+    
+  }
+  
+  .switch_type .switch__label:after{
+    transform: translate3d(-5%, -50%, 0);
+    transition: transform .4s cubic-bezier(0.44,-0.12, 0.07, 1.15);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgba(33, 39, 54, 0.1), 0 2px 3px 0 rgba(33, 39, 54, 0.1);
+    background-color: #ffffff;
+    border: solid 1px #f2f4f7;
+  }
+  
+  .switch_type .switch__toggle:checked ~ .switch__label:after{
+    transform: translate3d(80%, -50%, 0);    
+  }
+
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 700;
+    src: url("../../public/font/SF-UI-Text-Bold.otf");
+  }
+
+  .checkbox__wrapper p {
+    margin: auto 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    height: 16px;
+    font-family:  "SF Text", -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #212736;
+    vertical-align: top;
+  }
+ 
+  
+  
