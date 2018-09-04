@@ -11,7 +11,7 @@ function Checkbox(props) {
                 onChange={props.handleOptionChange} />
                 <span class="switch__label"></span>
             </label>
-            <p>{props.title}</p> 
+            <p onClick={props.handleOptionChange}>{props.title}</p> 
         </div>
     );
   }

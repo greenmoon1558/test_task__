@@ -40,15 +40,16 @@ module.exports={
 
           },
           {
-            test:/\.css$/, use:[
-            { loader: MiniCssExtractPlugin.loader}
-              ,{loader:"css-loader",
-
+            test:/\.css$/, use: [
+            { loader: MiniCssExtractPlugin.loader }, 
+            { loader:"css-loader",
               options:{
+                importLoaders: 1,
                 minimize:true,
                 sourceMap:true
               }
-            }
+            },
+            { loader: "postcss-loader" }
             ]
           },
           {
